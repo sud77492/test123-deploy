@@ -6,6 +6,6 @@ app = Flask(__name__)
 def home_view(): 
 		return "<h1>Sudhanshu</h1>"
 
-@app.route("/new", method=['get', 'post'])
-def new():
-	return render_template("new.html")
+# @app.route("/new", method=['get', 'post'])
+# def new():
+# 	return render_template("new.html")
