@@ -8,7 +8,4 @@ def home_view():
 
 @app.route("/new", method=['get', 'post'])
 def new():
-	if request.method=='POST':
-		email=request.form['email']
-		name=request.form['name']
 	return render_template("new.html")
