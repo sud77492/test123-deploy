@@ -9,9 +9,8 @@ app.config['SQLALCHEMY_DATABASE_URL']=os.environ.get("DATABASE_URL")
 
 db=SQLAlchemy(app)
 
-class User(db.Model):
-	__tablename__='users'
-
+# class User(db.Model):
+# 	__tablename__='users'
 	# id=db.Column(db.Integer,primary_key=True)
 	# name=db.Column(db.String,unique=True)
 	# email=db.Column(db.String,unique=True)
