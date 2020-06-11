@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY']='secret'
 app.config['SQLALCHEMY_DATABASE_URL']=os.environ.get("DATABASE_URL")
 
-# db=SQLAlchemy(app)
+db=SQLAlchemy(app)
 
 # class User(db.Model):
 # 	__tablename__='users'
