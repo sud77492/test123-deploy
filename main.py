@@ -4,12 +4,12 @@ from flask import Flask,render_template,request, url_for
 # import os
 
 app = Flask(__name__) 
-# app.config['SECRET_KEY']='secret'
-# app.config['SQLALCHEMY_DATABASE_URL']=os.environ.get("DATABASE_URL")
+app.config['SECRET_KEY']='secret'
+app.config['SQLALCHEMY_DATABASE_URL']=os.environ.get("DATABASE_URL")
 
 @app.route("/") 
 def home_view(): 
-		return "<h1>Sudhanshu</h1>"
+		return "<h1>Sudhanshu Sharma</h1>"
 
 @app.route("/new")
 def new():
