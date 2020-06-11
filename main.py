@@ -15,7 +15,7 @@ db=SQLAlchemy(app)
 	# name=db.Column(db.String,unique=True)
 	# email=db.Column(db.String,unique=True)
 
-# db.init_app()
+db.init_app()
 
 @app.route("/") 
 def home_view(): 
