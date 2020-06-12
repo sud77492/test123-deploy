@@ -9,17 +9,17 @@ app.config['SQLALCHEMY_DATABASE_URL']=os.environ.get("DATABASE_URL")
 
 db=SQLAlchemy(app)
 
-# class User(db.Model):
-# 	__tablename__='users'
-	# id=db.Column(db.Integer,primary_key=True)
-	# name=db.Column(db.String,unique=True)
-	# email=db.Column(db.String,unique=True)
+class User(db.Model):
+	__tablename__='users'
+	id=db.Column(db.Integer,primary_key=True)
+	name=db.Column(db.String,unique=True)
+	email=db.Column(db.String,unique=True)
 
-# db.init_app()
+db.init_app()
 
 @app.route("/") 
 def home_view(): 
-		return "<h1>Sudhanshu Sharma</h1>"
+		return "<h1>Sudhanshu</h1>"
 
 @app.route("/new")
 def new():
